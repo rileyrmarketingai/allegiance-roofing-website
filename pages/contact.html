@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Allegiance Roofing LLC - Schedule your free roof inspection. Call (719) 470-3953 or fill out our contact form.">
+    <title>Contact Us | Allegiance Roofing LLC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-left">
+                    <a href="tel:719-470-3953">📞 (719) 470-3953</a>
+                    <a href="mailto:info@allegianceroofingllc.com">✉️ info@allegianceroofingllc.com</a>
+                </div>
+                <div class="top-bar-right">
+                    <span>⭐ BBB A+ Rated | GAF Certified | IKO Partner</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-wrapper">
+            <div class="container">
+                <nav class="nav-container">
+                    <a href="../index.html" class="logo">
+                        <span>🏠</span>
+                        <span>Allegiance Roofing</span>
+                    </a>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="contact.html" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">Free Inspection</a></li>
+                    </ul>
+                    
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-badge">Get In Touch</div>
+                <h1>Schedule Your Free Roof Inspection</h1>
+                <p>Ready to protect your home? Contact us today for a no-obligation inspection and expert roofing advice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div>
+                    <h2>Request Your Free Inspection</h2>
+                    <p style="margin-bottom: 2rem;">Fill out the form below and we'll contact you within 24 hours to schedule your free roof inspection.</p>
+                    
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(719) 555-1234">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Property Address *</label>
+                            <input type="text" id="address" name="address" required placeholder="123 Main St, Colorado Springs, CO">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="free-inspection">Free Roof Inspection</option>
+                                <option value="roof-replacement">Roof Replacement</option>
+                                <option value="roof-repair">Roof Repair</option>
+                                <option value="storm-damage">Storm Damage Assessment</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your roofing needs, any visible damage, or questions you have..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Preferred Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="asap">As soon as possible</option>
+                                <option value="week">Within a week</option>
+                                <option value="month">Within a month</option>
+                                <option value="planning">Just planning ahead</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            Schedule Free Inspection
+                        </button>
+                        
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light); text-align: center;">
+                            By submitting this form, you agree to be contacted by Allegiance Roofing LLC regarding your inquiry.
+                        </p>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Prefer to reach out directly? We're here to help!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:719-470-3953">(719) 470-3953</a></p>
+                            <p style="font-size: 0.9rem;">Monday - Friday: 8am - 6pm<br>Saturday: 9am - 4pm<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@allegianceroofingllc.com">info@allegianceroofingllc.com</a></p>
+                            <p style="font-size: 0.9rem;">We respond to all emails within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Service Area</h4>
+                            <p>Colorado Springs & Falcon, CO</p>
+                            <p style="font-size: 0.9rem;">Serving all surrounding areas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🚨</div>
+                        <div class="contact-details">
+                            <h4>Emergency Service</h4>
+                            <p>Available for urgent repairs</p>
+                            <p style="font-size: 0.9rem;">Call us immediately for storm damage or active leaks</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--medium-gray);">
+                        <h4>Follow Us</h4>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="https://www.facebook.com/allegianceroofingllc/" target="_blank" class="social-link">📘</a>
+                            <a href="http://www.instagram.com/allegiance_roofingllc" target="_blank" class="social-link">📷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Contact Us -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Choose Us</span>
+                <h2>What Happens After You Contact Us?</h2>
+                <p>Here's what you can expect when you reach out to Allegiance Roofing.</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Quick Response</h3>
+                    <p>We'll contact you within 24 hours to discuss your needs and schedule a convenient time for your free inspection.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Free Inspection</h3>
+                    <p>Our expert team will thoroughly inspect your roof, document any issues, and provide you with a detailed assessment.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Transparent Estimate</h3>
+                    <p>You'll receive a clear, itemized estimate with no hidden fees. We'll explain all options and answer your questions.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Your Decision</h3>
+                    <p>No pressure, no obligation. Take your time to review our proposal and decide what's best for your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Trusted Excellence</span>
+                <h2>Why Colorado Springs Homeowners Choose Us</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>5.0 Star Rating</h3>
+                    <p>Perfect Google rating across 87 completed projects. Our customers consistently praise our professionalism and quality.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>BBB A+ Rated</h3>
+                    <p>Accredited since 2021 with the highest rating. Trust and transparency in every interaction.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Top 6% Ranking</h3>
+                    <p>BuildZoom ranks us above 94% of Colorado contractors based on performance and reliability.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Certified Excellence</h3>
+                    <p>GAF certified contractor and IKO partner. Access to premium materials and extended warranties.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Owned</h3>
+                    <p>Local family business with 6 years of experience. We treat your home like our own.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Free Inspections</h3>
+                    <p>No-cost, no-obligation roof inspections. Know your roof's condition before you commit to anything.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Don't Wait Until It's Too Late</h2>
+            <p>Small roof problems become expensive disasters. Get your free inspection today and protect your home before issues escalate.</p>
+            <div class="cta-buttons">
+                <a href="tel:719-470-3953" class="btn btn-primary btn-large">Call (719) 470-3953 Now</a>
+                <a href="#contactForm" class="btn btn-outline btn-large">Fill Out Form Above</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Allegiance Roofing</h3>
+                    <p>Family-owned roofing contractor serving Colorado Springs and Falcon with integrity and excellence since 2019.</p>
+                    <p><strong>Your Roof, Our Reputation</strong></p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/allegianceroofingllc/" target="_blank" class="social-link">📘</a>
+                        <a href="http://www.instagram.com/allegiance_roofingllc" target="_blank" class="social-link">📷</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Free Inspection</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Roof Replacement</a></li>
+                        <li><a href="services.html">Roof Repair</a></li>
+                        <li><a href="services.html">Free Inspections</a></li>
+                        <li><a href="services.html">Storm Damage</a></li>
+                        <li><a href="services.html">Emergency Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><a href="tel:719-470-3953">📞 (719) 470-3953</a></li>
+                        <li><a href="mailto:info@allegianceroofingllc.com">✉️ info@allegianceroofingllc.com</a></li>
+                        <li>📍 Serving Colorado Springs & Falcon, CO</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <strong>BBB A+ Rated</strong><br>
+                        <strong>GAF Certified</strong><br>
+                        <strong>IKO Partner</strong>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Allegiance Roofing LLC. All rights reserved. | Your Roof, Our Reputation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
